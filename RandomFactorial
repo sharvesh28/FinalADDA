@@ -1,0 +1,11 @@
+public class RandomFactorial{
+    public static void main(String[] args) {
+        int randomNumber = (int) (Math.random() * 100) + 1;
+        System.out.println("Random number: " + randomNumber);
+        long factorial = 1;
+        for (int i = 1; i <= randomNumber; i++) {
+            factorial *= i;
+        }
+        System.out.println("Factorial of " + randomNumber + " is: " + factorial);
+    }
+}
